@@ -13,7 +13,6 @@ import Error from './Components/error';
 import CustomerSupport from './Components/customerSupport';
 import PrivateRoute from './Components/private';
 import GeneratePDF from './Components/new';
-import Generatereportspage from './Components/new';
 
 function App() {
   useEffect(()=>{
@@ -32,7 +31,6 @@ function App() {
       <PrivateRoute path="/my-accounts" component={Myaccount}/>
       <PrivateRoute path="/customer-support" component={CustomerSupport}/>
       <PrivateRoute path="/generate" component={GeneratePDF}/>
-      <Route path="/generate-new" component={Generatereportspage}/>
       <Route path="/404" component={Error}/>
      </Switch>
     </div>
